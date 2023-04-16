@@ -1,0 +1,1 @@
+export { WelcomeOutput } from './WelcomeOutput';

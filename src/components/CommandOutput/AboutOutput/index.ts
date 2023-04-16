@@ -1,0 +1,1 @@
+export { AboutOutput } from './AboutOutput';
