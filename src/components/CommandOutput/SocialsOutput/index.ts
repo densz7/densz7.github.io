@@ -1,0 +1,1 @@
+export { SocialsOutput } from './SocialsOutput';

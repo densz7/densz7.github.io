@@ -13,13 +13,18 @@ export default {
     },
     padding: {
       containerLg: '20px',
+      containerSm: '12px',
     },
     keyframes: {
       blinkCaret: {
         '50%': { opacity: '0' },
       },
     },
-    extend: {},
+    extend: {
+      screens: {
+        xs: '425px',
+      },
+    },
   },
   plugins: [],
 };

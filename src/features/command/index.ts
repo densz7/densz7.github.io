@@ -1,4 +1,4 @@
-export { CommandLine } from './ui';
+export { CommandLine, CommandsSuggestions } from './ui';
 export { useCommandStore } from './store';
 export { CommandId } from './types';
 

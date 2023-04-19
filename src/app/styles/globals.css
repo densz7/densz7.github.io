@@ -15,18 +15,14 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
   color: theme('colors.mainFont');
-}
-
-body,
-#root {
-  height: 100vh;
+  background-color: theme('colors.mainBg');
+  font-size: theme('fontSize.base');
 }
 
 button,

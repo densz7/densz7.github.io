@@ -1,0 +1,1 @@
+export { EducationOutput } from './EducationOutput';

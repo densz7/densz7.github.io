@@ -6,6 +6,10 @@ import { HelpOutput } from './HelpOutput';
 import { AboutOutput } from './AboutOutput';
 import { GithubOutput } from './GithubOutput';
 import { EmailOutput } from './EmailOutput';
+import { SkillsOutput } from './SkillsOutput';
+import { SocialsOutput } from './SocialsOutput';
+import { HistoryOutput } from './HistoryOutput';
+import { EducationOutput } from './EducationOutput';
 
 interface ICommandOutputProps {
   inputValue: string;
@@ -21,6 +25,10 @@ export const CommandOutput = ({ inputValue }: ICommandOutputProps) => {
       [CommandId.EMAIL]: <EmailOutput />,
       [CommandId.GITHUB]: <GithubOutput />,
       [CommandId.HELP]: <HelpOutput />,
+      [CommandId.SKILLS]: <SkillsOutput />,
+      [CommandId.SOCIALS]: <SocialsOutput />,
+      [CommandId.HISTORY]: <HistoryOutput />,
+      [CommandId.EDUCATION]: <EducationOutput />,
     };
   }, []);
 

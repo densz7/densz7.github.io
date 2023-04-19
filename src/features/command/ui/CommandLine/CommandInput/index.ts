@@ -1,3 +1,3 @@
 export { CommandInput } from './CommandInput';
 
-export type { ICommandInputProps } from './CommandInput';
+export type { CommandInputProps } from './types';

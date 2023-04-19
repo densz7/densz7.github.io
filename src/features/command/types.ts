@@ -1,14 +1,14 @@
 export enum CommandId {
   ABOUT = 'about',
-  // SKILLS,
+  SKILLS = 'skills',
+  EDUCATION = 'education',
   // PORTFOLIO,
   GITHUB = 'github',
-  // SOCIALS,
   EMAIL = 'email',
   HELP = 'help',
-  // HISTORY,
+  HISTORY = 'history',
   CLEAR = 'clear',
-  // UNKNOWN = 'unknown',
+  SOCIALS = 'socials',
 }
 
 export type Command = string;

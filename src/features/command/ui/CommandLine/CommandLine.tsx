@@ -1,9 +1,9 @@
 import { CommandHelper } from '../../helpers';
 
-import { CommandInput, ICommandInputProps } from './CommandInput';
+import { CommandInput, CommandInputProps } from './CommandInput';
 
 interface ICommandLineProps {
-  InputProps?: ICommandInputProps;
+  InputProps?: CommandInputProps;
 }
 
 export const CommandLine = ({ InputProps }: ICommandLineProps) => {

@@ -1,1 +1,1 @@
-export { CommandLine } from './command';
+export { CommandLine, CommandsSuggestions } from './command';

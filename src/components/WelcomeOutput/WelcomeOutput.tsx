@@ -1,10 +1,8 @@
-import { Link } from '../../shared/ui';
-
-const Divider = () => <div>–––––</div>;
+import { Divider, Link } from '../../shared/ui';
 
 export const WelcomeOutput = () => (
   <div>
-    <pre>
+    <pre className="max-xs:text-[10px] max-xs:leading-[12px] max-sm:text-xs max-sm:leading-[14px]">
       {[
         ' __          __         _                                   ',
         ' \\ \\        / /        | |                                  ',
@@ -15,8 +13,8 @@ export const WelcomeOutput = () => (
         '                                                            ',
       ].join('\n')}
     </pre>
-    <div className="pt-[12px] leading-[21px]">
-      <p>Добро пожаловать на мой сайт-портфолио, выполненный в стиле терминала</p>
+    <div className="pt-[24px] leading-[21px]">
+      <p>Добро пожаловать на мой сайт-визитку, выполненный в стиле терминала</p>
       <Divider />
       <p>
         Исходный код этого проекта расположен в{' '}
