@@ -1,4 +1,4 @@
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs/esm/index';
 
 const DATE_BIRTHDAY = '1996-03-19';
 
