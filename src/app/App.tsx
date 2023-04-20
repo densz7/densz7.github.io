@@ -14,7 +14,7 @@ const App = () => {
         {commandsHistory.map((command, index) => (
           <CommandHistory key={index}>
             <CommandLine InputProps={{ disabled: true, defaultValue: command }} />
-            <CommandOutput inputValue={command} />
+            <CommandOutput inputValue={command.trim()} />
           </CommandHistory>
         ))}
         <div className="pt-[17px]">

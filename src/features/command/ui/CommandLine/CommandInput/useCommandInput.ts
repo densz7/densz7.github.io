@@ -53,7 +53,7 @@ export const useCommandInput = ({ defaultValue }: IUseCommandInputParams) => {
 
     const keyActionMap: Record<string, () => void> = {
       Enter: () => {
-        const command = CommandHelper.getCommandById(currentTargetValue as CommandId);
+        const command = CommandHelper.getCommandById(currentTargetValue.trim() as CommandId);
         const isClearCommand = command === CommandId.CLEAR;
         const newCursor = history.length + 1;
 
