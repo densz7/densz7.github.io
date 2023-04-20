@@ -19,6 +19,11 @@
   margin: 0;
 }
 
+*::selection {
+  background-color: theme('colors.selectedTextBg');
+  color: theme('colors.selectedText');
+}
+
 body {
   color: theme('colors.mainFont');
   background-color: theme('colors.mainBg');

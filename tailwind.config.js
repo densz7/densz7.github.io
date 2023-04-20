@@ -6,6 +6,8 @@ export default {
       transparent: 'transparent',
       mainBg: '#000000',
       mainFont: '#ffffff',
+      selectedText: '#000000',
+      selectedTextBg: '#ffffff',
       link: '#0CA0EA',
       command: '#768BA6',
       username: '#BCC838',
