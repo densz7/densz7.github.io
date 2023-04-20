@@ -1,12 +1,13 @@
 import { CommandId } from '../../../features/command';
 
 const commands = [
-  { name: CommandId.ABOUT, description: 'обо мне' },
+  { name: CommandId.ME, description: 'обо мне' },
   { name: CommandId.SKILLS, description: 'мои хард-скиллы' },
   { name: CommandId.EDUCATION, description: 'образование' },
   { name: CommandId.GITHUB, description: 'мой GitHub аккаунт' },
   { name: CommandId.SOCIALS, description: 'мои социальные сети' },
   { name: CommandId.EMAIL, description: 'узнать мой email' },
+  { name: CommandId.ABOUT, description: 'о проекте' },
   { name: CommandId.HELP, description: 'выводит все доступные команды' },
   { name: CommandId.HISTORY, description: 'выводит историю команд' },
   { name: CommandId.CLEAR, description: 'очистить терминал' },

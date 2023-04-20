@@ -1,20 +1,38 @@
-import dayjs from 'dayjs/esm/index';
+const technologies = ['React v18', 'TypeScript', 'Zustand', 'Tailwind', 'ESLint', 'Prettier'];
 
-const DATE_BIRTHDAY = '1996-03-19';
-
-const AGE = dayjs().diff(dayjs(DATE_BIRTHDAY), 'y');
+const features = [
+  'Просмотр истории команд',
+  'Очистка истории команд',
+  'Автоматическое завершение команд по нажатию на клавишу `Tab`',
+  'Переход по истории вперёд/назад через клавиши `UpArrow`/`DownArrow`',
+];
 
 export const AboutOutput = () => {
   return (
     <div>
-      <p className="mb-[10px]">
-        Меня зовут <span className="font-medium">Денис Журавлев, мне {AGE} лет.</span>
-      </p>
-      <p className="mb-[10px]">
-        Я являюсь <span className="font-medium">frontend-разработчиком.</span>
-      </p>
-      <p>
-        Проживаю в городе <span className="font-medium">Тюмень.</span>
+      <p>Данный проект разработан с использованием следующих технологий:</p>
+      <ul>
+        {technologies.map((technology, index) => (
+          <li
+            key={index}
+            className="mt-[7px]"
+          >
+            - {technology}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-[20px]">
+        Особенности данного проекта:{' '}
+        <ul>
+          {features.map((technology, index) => (
+            <li
+              key={index}
+              className="mt-[7px]"
+            >
+              - {technology}
+            </li>
+          ))}
+        </ul>
       </p>
     </div>
   );

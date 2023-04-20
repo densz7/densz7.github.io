@@ -2,7 +2,7 @@ export enum CommandId {
   ABOUT = 'about',
   SKILLS = 'skills',
   EDUCATION = 'education',
-  // PORTFOLIO,
+  ME = 'me',
   GITHUB = 'github',
   EMAIL = 'email',
   HELP = 'help',

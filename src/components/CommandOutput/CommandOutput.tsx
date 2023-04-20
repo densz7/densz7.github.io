@@ -10,6 +10,7 @@ import { SkillsOutput } from './SkillsOutput';
 import { SocialsOutput } from './SocialsOutput';
 import { HistoryOutput } from './HistoryOutput';
 import { EducationOutput } from './EducationOutput';
+import { MeOutput } from './MeOutput';
 
 interface ICommandOutputProps {
   inputValue: string;
@@ -29,13 +30,14 @@ export const CommandOutput = ({ inputValue }: ICommandOutputProps) => {
       [CommandId.SOCIALS]: <SocialsOutput />,
       [CommandId.HISTORY]: <HistoryOutput />,
       [CommandId.EDUCATION]: <EducationOutput />,
+      [CommandId.ME]: <MeOutput />,
     };
   }, []);
 
   const commandComponent = commandComponentMap[inputValue as Exclude<CommandId, CommandId.CLEAR>];
 
   if (inputValue === '') {
-    return <></>;
+    return null;
   }
 
   if (!commandComponent) {
